@@ -10,7 +10,8 @@ const fetchQuotes = async() => {
         text: results.quote,
         image: results.image,
 
-    }
+    };
+    return firstQuote;
 }
 
 module.exports = {
