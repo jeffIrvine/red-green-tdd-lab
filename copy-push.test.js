@@ -6,4 +6,10 @@ describe('copyAndPush testing', () => {
         const something = copyAndPush(numbers, 4);
         expect(something).toEqual([1, 2, 3, 4])
     })
+    it('make sure the original is unchanged', () => {
+        const numbers = [1, 2, 3];
+        const something = copyAndPush(numbers, 4);
+
+        expect(numbers).toEqual([1, 2, 3])
+    })
 });
